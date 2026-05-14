@@ -1,0 +1,15 @@
+export enum ServerInit {
+  protocol = 'mqtt://',
+  host = '191.101.2.61',
+  port = 1883,
+  topicMain = 'Heater/39/trigger',
+  topicArm = 'Heater/39/arm',
+  topicTime = 'Heater/39/time',
+  topicMain39 = 'Heater/39/trigger',
+  topicArm39 = 'Heater/39/arm',
+  topicTime39 = 'Heater/39/time',
+  topicSettings39 = 'Heater/39/settings',
+  //topicMain39 = 'Heater_39',
+  //topicArm39 = 'Heater_39_arm',
+  //topicTime39 = 'Heater_39_time',
+}
