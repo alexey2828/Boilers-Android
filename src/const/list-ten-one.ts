@@ -5,9 +5,9 @@ import { colors } from './colors';
 import { states } from './states';
 
 export function listTenOne(jsonFromServer: any, tenValues: string = '{}') {
-  const parsedTenValues = JSON.parse(tenValues); // Парсим строку в объект
+  const parsedTenValues = JSON.parse(tenValues); 
   const listTenOne = Object.keys(parsedTenValues).map(key => {
-    // Извлекаем id из ключа, сохраняем 'R' если оно есть
+
     const id = key.startsWith('R') ? key : key.replace('Ten', '');
 
     const soTSValue = parsedTenValues[key];
